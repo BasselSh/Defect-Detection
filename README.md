@@ -10,8 +10,8 @@ Check source code in the folder `defect`
 
 
 ## Demo
-<img src="assets/zoom_out_test.gif" width="60%" height="60%">
-<img src="assets/scratches_detection.gif" width="60%" height="60%">
+<img src="assets/zoom_out_test.gif" width="40%" height="40%">
+<img src="assets/scratches_detection.gif" width="40%" height="40%">
 
 ## Inference on inspection conditions
 <div style="display: flex; flex-wrap: wrap;">
