@@ -1,51 +1,33 @@
-
 This work is built on the repository https://github.com/Chan-Sun/IFSDD. Thanks for making it open source!
 
 Check source code in the folder `defect`
 
-## installation
+## Installation
 
-1. Create conda environment
+See [installation.md](packages/installation.md)
 
-```shell
-conda create --name defect python=3.8 -y
-conda activate defect
-```
+## Demo
 
-2. Install `Pytorch` with cuda
+### Videos
 
-```shell
-pip install torch==1.9.0+cu111 torchvision==0.10.0+cu111 torchaudio==0.9.0 -f https://download.pytorch.org/whl/torch_stable.html
-```
+* [Video 1](assets/zoom_out_test.avi)
+* [Video 2](assets/scratches_detection.avi)
 
-3. Install `MMCV` and `MMCLS`
+### Images
 
-```shell
-pip install -U openmim
-mim install mmcv-full==1.4.6
-pip install mmcls==0.16
-```
+* [Image 1](assets/augmentation examples/brightness.png)
+* [Image 2](assets/augmentation examples/contrast.png)
+* [Image 3](assets/augmentation examples/fog.png)
+* [Image 4](assets/augmentation examples/rotation.png)
+* [Image 5](assets/augmentation examples/motion_blur.png)
+* [Image 6](assets/augmentation examples/zoom_blur.png)
 
-4. Build the source code of dowloaded packages and the current one
 
-```shell
-cd ./packages
+## Training
+Incremental learning consists of two stages:
 
-cd ./mmdetection
-pip install -r requirements.txt
-pip install -e .
-```
+* [Image 1](assets/scheme1.jpg)
 
-5. (Optional) install tensorboard for monitoring training and testing
-
-```shell
-pip install tensorboard==1.15
-```
-
-To use Jupiter Notebook install the following package:
-```shell
-conda install -n defect ipykernel --update-deps --force-reinstall -y
-```
-
-In case weights of ResNet are not found, copy the file ```weights/resnet101.pth``` to the hidden directory ```~/.torch/models```
+During inference different environmental conditions are applied.
+* [Image 2](assets/scheme2.jpg)
 
