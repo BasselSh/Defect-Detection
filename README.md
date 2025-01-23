@@ -5,14 +5,15 @@ This repository contains the code for the Master's Thesis [**Visual Anomaly Dete
 
 
 
-Check source code in the folder `defect`
+Check out source code in the folder `defect`
 
 
 
 ## Demo
-<img src="assets/zoom_out_test.gif" width="40%" height="40%">
-<img src="assets/scratches_detection.gif" width="40%" height="40%">
-
+<div style="display: flex; flex-wrap: wrap;">
+  <img src="assets/zoom_out_test.gif" style="width: 100%; height: 100%;">
+  <img src="assets/scratches_detection.gif" style="width: 100%; height: 100%;">
+</div>
 ## Inference on inspection conditions
 <div style="display: flex; flex-wrap: wrap;">
   <img src="assets/augmentation-examples/brightness.png" style="width: 30%;">
