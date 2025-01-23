@@ -14,7 +14,10 @@ Check out source code in the folder `defect`
   <img src="assets/zoom_out_test.gif" style="width: 100%; height: 100%;">
   <img src="assets/scratches_detection.gif" style="width: 100%; height: 100%;">
 </div>
-## Inference on inspection conditions
+<br>
+Inference on inspection conditions
+<br>
+<br>
 <div style="display: flex; flex-wrap: wrap;">
   <img src="assets/augmentation-examples/brightness.png" style="width: 30%;">
   <img src="assets/augmentation-examples/contrast.png" style="width: 30%;">
