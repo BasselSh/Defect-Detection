@@ -1,37 +1,48 @@
 This work is built on the repository https://github.com/Chan-Sun/IFSDD. Thanks for making it open source!
 
+This repository contains the code for the Master's Thesis [**Visual Anomaly Detection in Industrial Environments Using Quadcopter's On-Board RGB Camera**](assets/VISUAL-ANOMALY-DETECTION.pdf)
+
+
+
+
 Check source code in the folder `defect`
+
+
+
+## Demo
+<video width="400" height="400" autoplay loop muted>
+  <source src="assets/zoom_out_test.mp4" type="video/mp4">
+</video>
+<video width="400" height="400" autoplay loop muted>
+  <source src="assets/scratches_detection.mp4" type="video/mp4">
+</video>
+
+## Inference on inspection conditions
+<div style="display: flex; flex-wrap: wrap;">
+  <img src="assets/augmentation-examples/brightness.png" style="width: 30%;">
+  <img src="assets/augmentation-examples/contrast.png" style="width: 30%;">
+  <img src="assets/augmentation-examples/fog.png" style="width: 30%;">
+  <img src="assets/augmentation-examples/rotation.png" style="width: 30%;">
+  <img src="assets/augmentation-examples/motion_blur.png" style="width: 30%;">
+  <img src="assets/augmentation-examples/zoom_blur.png" style="width: 30%;">
+</div>
 
 ## Installation
 
-See [installation.md](packages/installation.md)
+See [installation.md](installation.md)
 
-## Demo
-
-### Videos
-<video width="320" height="240" autoplay loop>
-  <source src="assets/zoom_out_test.avi" type="video/avi">
-  Your browser does not support the video tag.
-</video>
-<video width="320" height="240" autoplay loop>
-  <source src="assets/scratches_detection.avi" type="video/avi">
-  Your browser does not support the video tag.
-</video>
-
-### Images
-![Image 1](assets/augmentation examples/brightness.png)
-![Image 2](assets/augmentation examples/contrast.png)
-![Image 3](assets/augmentation examples/fog.png)
-![Image 4](assets/augmentation examples/rotation.png)
-![Image 5](assets/augmentation examples/motion_blur.png)
-![Image 6](assets/augmentation examples/zoom_blur.png)
-
-
-## Training
-Incremental learning consists of two stages:
-
-![Image 1](assets/scheme1.jpg)
+## Incremental Learning
+The model is able to learn new defects incrementally. The training paradigm consists of two stages:
+<!-- <br> -->
+<img src="assets/scheme1.jpg" style="width: 60%; margin: auto; display: block;">
 
 During inference different environmental conditions are applied.
-![Image 2](assets/scheme2.jpg)
+<!-- <br> -->
+<img src="assets/scheme2.jpg" style="width: 60%; margin: auto; display: block;">
 
+
+## GUI for image augmentation
+This GUI is designed to test the robustness of any model for different conditions applied on the input images. It visualizes the augmented images, and updates the configuration of the pipeline of test data, and generate a bash file containig the test commands to run testing on multiple configurations consequently. The default augmentations are: `none`, `gaussian_noise`, `shot_noise`, `impulse_noise`, `motion_blur`, `zoom_blur`, `snow`, `fog`, `brightness`, `contrast`, `elastic_transform`, `pixelate`, `jpeg_compression`, `speckle_noise`, `spatter`, `saturate`.
+<br>
+<br>
+<img src="assets/GUI.png" style="width: 100%; margin: auto; display: block;">
