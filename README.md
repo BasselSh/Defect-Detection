@@ -10,12 +10,8 @@ Check source code in the folder `defect`
 
 
 ## Demo
-<video width="400" height="400" autoplay loop muted>
-  <source src="assets/zoom_out_test.mp4" type="video/mp4">
-</video>
-<video width="400" height="400" autoplay loop muted>
-  <source src="assets/scratches_detection.mp4" type="video/mp4">
-</video>
+<img src="https://github.com/BasselSh/Defect-Detection/assets/zoom_out_test.gif" width="60%" height="60%">
+<img src="https://github.com/BasselSh/Defect-Detection/assets/scratches_detection.gif" width="60%" height="60%">
 
 ## Inference on inspection conditions
 <div style="display: flex; flex-wrap: wrap;">
