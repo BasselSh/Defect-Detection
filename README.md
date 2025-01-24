@@ -1,5 +1,3 @@
-This work is built on the repository https://github.com/Chan-Sun/IFSDD. Thanks for making it open source!
-
 This repository contains the code for the Master's Thesis [**Visual Anomaly Detection in Industrial Environments Using Quadcopter's On-Board RGB Camera**](assets/VISUAL-ANOMALY-DETECTION.pdf)
 
 
