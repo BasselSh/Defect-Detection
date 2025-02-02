@@ -82,7 +82,7 @@ Direct fine-tuning (dark blue)
 <img src="assets/fine_tune_comparison.png" style="width: 100%; margin: auto; display: block;">
 </div>
 
-DkAN could successfully maintain a constant performance (mAP) after fine-tuning.
+DkAN could successfully maintain a constant performance (mAP) after fine-tuning. (The yellow line is almost horizontal on base classes)
 
 ## GUI for image augmentation
 This GUI is designed to test the robustness of any model for different conditions applied on the input images. It visualizes the augmented images, and updates the configuration of the pipeline of test data, and generate a bash file containig the test commands to run testing on multiple configurations consequently. The default augmentations are: `none`, `gaussian_noise`, `shot_noise`, `impulse_noise`, `motion_blur`, `zoom_blur`, `snow`, `fog`, `brightness`, `contrast`, `rotation`, `elastic_transform`, `pixelate`, `jpeg_compression`, `speckle_noise`, `spatter`, `saturate`.
