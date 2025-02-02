@@ -7,7 +7,7 @@ Check out source code in the folder `defect`
 
 ## Demo
 
-<div style="display: flex; flex-wrap: wrap;">
+<div style="display: flex; flex-wrap: wrap; justify-content: center;">
   <img src="assets/zoom_out_test.gif" style="width: 100%; height: 100%;">
   <img src="assets/scratches_detection.gif" style="width: 100%; height: 100%;">
 </div>
