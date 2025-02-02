@@ -7,15 +7,18 @@ Check out source code in the folder `defect`
 
 ## Demo
 
-<div style="display: flex; flex-wrap: wrap; justify-content: center;">
-  <img src="assets/zoom_out_test.gif" style="width: 100%; height: 100%;">
-  <img src="assets/scratches_detection.gif" style="width: 100%; height: 100%;">
+<div style="display: flex; flex-wrap: wrap;", align="center">
+  <img src="assets/zoom_out_test.gif" style="width: 120%; height: 120%;">
+  <img src="assets/scratches_detection.gif" style="width: 120%; height: 120%;">
 </div>
+
+<br>
+<br>
 <br>
 
 Inspection on a close surface:
 <div align="center">
-<img src="assets/inclusion.jpg" style="width: 50%; height: 50%;">
+<img src="assets/inclusion.jpg" style="width: 40%">
 </div>
 <br>
 
@@ -50,12 +53,15 @@ When training Faster RCNN then fine-tuning it directly, the `catastrophic forget
 1. The model is trained on 3 categories of defects.
 2. The model is fine-tuned on 3 additional categories of defects.
 <br>
+
 **Observation:** When the model learns new defects, it forgets the old ones.
 <br>
-We see the drop in accuracy from: 86%, 90%, 94% to 67%, 64%, 64%.
+We see the drop in accuracy from 86%, 90%, 94% to 67%, 64%, 64%.
+<br>
+
 <div style="display: flex; flex-wrap: wrap; justify-content: center;">
   <img src="assets/Pretrained Faster RCNN.png" style="width: 40%;">
-  <img src="assets/confusion_after_finetune.png" style="width: 40%;">
+  <img src="assets/confusion_after_finetune.png" style="width: 48%;">
 </div>
 
 ## Fine-tuning with knowledge distillation
